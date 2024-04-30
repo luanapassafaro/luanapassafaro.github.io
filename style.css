@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body > footer {
+    padding-top: 0;
+    margin-top: auto;
+}
+
+a:not([role]):has(> i, > svg) {
+    display: flex;
+    gap: 0.33em;
+    align-items: center;
+}
+
+a[role="button"] > :is(i, svg) {
+    margin-inline: 0.33em;
+}
+
+section {
+    text-align: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+article header:has(+ figure, + img) {
+    margin-bottom: 0;
+}
+
+article header :is(h1,h2,h3,h4,h5,h6) {
+    margin-bottom: 0;
+}
+
+article footer {
+    padding-top: 0;
+    background: none;
+    margin-top: auto;
+}
+
+article figure {
+    margin-inline: calc(var(--pico-block-spacing-horizontal) * -1);
+    margin-bottom: var(--pico-block-spacing-vertical);
+}
+
+article nav li {
+    padding-bottom: 0;
+}
+
+.secondary {
+    color: var(--pico-secondary);
+}
+
+.stack {
+    color: var(--pico-secondary);
+    display: flex;
+    gap: 0.25em;
+    align-items: center;
+    justify-content: center;
+}
+
+.stack svg {
+    height: 1em;
+    width: 1.25em;
+    vertical-align: middle;
+}
+
+.stack [data-tooltip] {
+    border: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
