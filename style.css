@@ -79,3 +79,9 @@ article nav li {
     justify-content: center;
     gap: 1rem;
 }
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
